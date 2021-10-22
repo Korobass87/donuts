@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  padding-top: 7px;
+  padding-bottom: 33px;
+}
+
+@media screen and (max-width: 767px) {
+  .header__list {
+    display: none;
+  }
+}
+
+.header__container {
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.header__logo {
+  width: 30px;
+  height: 16px;
+}
+
+.logo-icon {
+  width: 96px;
+  height: 43px;
+}
+
+.header__nav {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header__burger {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background-color: rgba(171, 129, 108, 0);
+}
+
+.hero__container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  margin: 0;
+}
+
+.hero__title {
+  max-width: 224px;
+  font-family: Caveat Brush, "arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 38px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*# sourceMappingURL=main.css.map */
