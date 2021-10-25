@@ -58,3 +58,12 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.logo-icon .fill {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo-icon:hover .fill {
+  fill: #aa6543;
+  stroke: #aa6543;
+  stroke-width: 0.5;
+}
