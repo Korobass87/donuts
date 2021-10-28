@@ -1,0 +1,72 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (max-width: 1279px) and (min-width: 768px) {
+    max-width: 554px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 854px;
+    padding: 0;
+  }
+  &--footer {
+    display: block;
+  }
+}
+.footer {
+  padding-bottom: 19px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 21px;
+  }
+}
+.social-list--footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+  align-items: center;
+}
+.social-list__item {
+  margin-right: 12px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.social-list__link {
+  color: $text;
+  transition: color $fortransitions;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #aa6543;
+  }
+}
+.social-list__icon {
+  fill: currentColor;
+  display: block;
+}
+.auth-nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.auth-nav__link {
+  font-family: $font;
+  font-size: 16px;
+  color: $text;
+  @include transition(color);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #aa6543;
+  }
+}
+.auth-nav__icon {
+  fill: currentColor;
+  margin-right: 3px;
+}

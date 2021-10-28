@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="mask-icon" href="./images/favicon/safari-pinned-tab.svg" color="#ffffff" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#dfa8a8" />
     <title>Donuts</title>
-    <link rel="stylesheet" href="./sass/main.css" />
+    <!-- <link rel="stylesheet" href="./sass/main.css" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -20,16 +26,25 @@
   </head>
   <body>
     <include src="./partials/header.html"></include>
-    <include src="./partials/menu.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/program.html"></include>
-    <include src="./partials/reviews.html"></include>
-    <include src="./partials/registration.html"></include>
-    <include src="./partials/contact.html"></include>
+    <main>
+      <include src="./partials/about.html"></include>
+      <include src="./partials/program.html"></include>
+      <include src="./partials/reviews.html"></include>
+      <include src="./partials/registration.html"></include>
+      <include src="./partials/contact.html"></include>
+    </main>
     <include src="./partials/footer.html"></include>
+    <include src="./partials/menu.html"></include>
+    <include src="./partials/top-button.html"></include>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+
     <script src="./index.js"></script>
-    <script src="../js/menu.js"></script>
-    <div id="bottom">низ</div>
   </body>
 </html>
